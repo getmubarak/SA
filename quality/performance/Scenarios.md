@@ -1,4 +1,5 @@
-Quality Attribute	| Performance	  
+Quality Attribute	| Performance	 
+------------------|-------------
 Source	 |A bus patron	
 Stimulus	|"wants to know when their bus is going to arrive at  "	
 Artifact	 | the bus stop they’re standing at when	
