@@ -5,8 +5,7 @@ Stimulus	Fault | omission, crash, timing, response
 Artifact |	System’s processors, communication channels, persistent storage processes
 Environment	| Normal operation, Startup,  Shutdown, Repair mode, Degraded (failsafe) mode, Overloaded operation
 Response |	"Prevent the failure Log the failure,
-Notify | 
-* users / operators,
+Notify | * users / operators,
 * Disable source of failure,
 * Temporarily unavailable,
 * Continue (normal / degraded),"
