@@ -1,19 +1,27 @@
-"robustness" describes an application's response to its input  while "fault-tolerance" describes an application's response to its environment.
 
-An app is robust when it can work consistently with inconsistent data. A robust program will accept junk input and not crash. A music player is robust when it can continue decoding an MP3 after encountering a malformed frame. A maps application is robust when it can parse addresses in various formats with various misspellings and return a useful location. 
+* Call API with wrong number of parameters, with wrong data types, with values exceeding the allowed range, with special characters e.g. white spaces, control-sequences, characters beyond standard ASCII-range, …
 
-An app is fault-tolerant when it can work consistently in an inconsistent environment. A database application is fault-tolerant when it can access an alternate shard when the primary is unavailable. A web application is fault-tolerant when it can continue handling requests from cache even when an API host is unreachable. A storage subsystem is fault-tolerant when it can return results calculated from parity when a disk member is offline.
+* Submit more requests then the API can handle.
 
-The opposite of robust code is fragile code. 
+* How are the errors initiated, or triggered, in the real world?
 
-program that accepts "pancakes" for a date input and pops up a error box. 
+* What types of corrective and recovery actions are required for each type of error?
 
-The harder it is to create an error of any type or form that the computer cannot handle safely the more robust the software is.
+* What kinds of disasters can strike?
 
-If you send a bad HTTP header to a robust web server, it shouldn't crash.
+* If you send a bad HTTP header to a robust web server, it shouldn't crash.
 
-If a robust web server runs for a very long time, its memory footprint should stay the same.
+* If a robust web server runs for a very long time, its memory footprint should stay the same.
 
-there are many types of failures: incorrect code, incomplete code, unexpected values, unexpected states, exceptions, resource exhaustion,… Robust code handles these well.
+* there are many types of failures: incorrect code, incomplete code, unexpected values, unexpected states, exceptions, resource exhaustion,… Robust code handles these well.
 
-Java manages all dynamic memory, checks array bounds, and other exceptions.
+* Java manages all dynamic memory, checks array bounds, and other exceptions.
+
+
+
+
+
+
+
+
+
