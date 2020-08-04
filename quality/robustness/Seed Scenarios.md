@@ -1,8 +1,8 @@
-Quality Attribute	| Reliability	
+Quality Attribute	| Robustness	
 ------------------|--------------
-Source	| External to system	
-Stimulus	| The Consumer Web site sent a purchase order request to the OPC. The OPC processed that request but didn’t reply to Consumer Website within five seconds, so the Consumer Web site resends the request to the OPC.	
-Artifact	| Adventure Builder system	
-Environment	| Normal operation	
-Response	| "The OPC receives the duplicate request, but the consumer is not double-charged, data remains in a consistent state, and the Consumer Web site is notified that the original request was successful."	
-Response Measure |	In 100% of the cases	
+Source	| Agent writer, network engineer, terrain designer	
+Stimulus |	enters incorrect input in scenarios 1,3,4; during execution	
+Artifact	| Config file	
+Environment	 | Simulator execution	
+Response	| the system prints an error message and execution stops.	
+Response Measure	| User is able to correct errors at rate of 1 minute/error	
