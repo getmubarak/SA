@@ -10,3 +10,13 @@ Say designer A’s umbrellas all flip at 11mph
 Say designer B’s umbrellas dont flip up to 30mph winds
 
 Although both designer’s umbrellas are reliable, Designer B’s umbrellas are more robust.
+
+Reliability is a measure of the percentage uptime, considering the downtime due only to faults. Reliability is usually measured in terms of the mean (average) time between failures.
+
+Availability is a measure of the percentage uptime, considering the downtime due to faults and other causes such as planned maintenance. Availability is the measure of the proportion of time the IT system is likely to be operational over a given interval. It takes into account both the mean time between failures and the mean time to repair 
+
+Reliability is a measure of how often the IT system fails to operate. As there are various ways a system can fail, there are usually different categories of failure depending on severity. The failure type of greatest concern, of course, is catastrophic failure, meaning that the system stops working altogether. 
+“the probability of failure-free software operation for a specified period of time in a specified environment.”
+
+Resiliency is a measure of the IT system's ability to self-recover from problems that might otherwise cause it to fail,
+Resiliency is the ability of a cloud-based service to withstand certain types of failure and yet remain functional from the customer perspective.  In other words, reliability is the outcome and resilience is the way you achieve the outcome. 
