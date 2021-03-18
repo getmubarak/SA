@@ -25,3 +25,194 @@ differently to meet your performance objectives.
 
 8. Validate. Validate your model and estimates. This is an ongoing activity and
 includes prototyping, testing, and measuring
+
+
+Step 1. Identify Key Scenarios
+Identify your application scenarios that are important from a performance
+perspective. If you have documented use cases or user stories, use them to help you
+define your scenarios. Key scenarios include the following:
+
+Critical Scenarios
+These are the scenarios that have specific performance expectations or requirements.
+Examples include scenarios covered by SLAs or those that have specific performance
+objectives. 
+
+Significant Scenarios
+Significant scenarios do not have specific performance objectives such as a response
+time goal, but they may impact other critical scenarios.
+To help identify significant scenarios, identify scenarios with the following
+characteristics:
+● Scenarios that run in parallel to a performance-critical scenario.
+● Scenarios that are frequently executed.
+● Scenarios that account for a high percentage of system use.
+● Scenarios that consume significant system resources.
+Do not ignore your significant scenarios. Your significant scenarios can influence
+whether your critical scenarios meet their performance objectives. Also, do not forget
+to consider how your system will behave if different significant or critical scenarios
+are being run concurrently by different users. This “parallel integration” often drives
+key decisions about your application’s units of work. For example, to keep search
+response brisk, you might need to commit orders one line item at a time. 
+
+
+
+Step 2. Identify Workload
+Workload is usually derived from marketing data. It includes the following:
+● Total users.
+● Concurrently active users.
+● Data volumes.
+● Transaction volumes and transaction mix.
+For performance modeling, you need to identify how this workload applies to an
+individual scenario. The following are example requirements:
+● You might need to support 100 concurrent users browsing.
+● You might need to support 10 concurrent users placing orders. 
+
+
+
+Step 3. Identify Performance Objectives
+For each scenario identified in Step 1, write down the performance objectives.
+The performance objectives are determined by your business requirements.
+Performance objectives usually include the following:
+● Response time. For example, the product catalog must be displayed in less than
+3 seconds.
+● Throughput. For example, the system must support 100 transactions per second.
+● Resource utilization. A frequently overlooked aspect is how much resource your
+application is consuming, in terms of CPU, memory, disk I/O, and network I/O.
+Consider the following when establishing your performance objectives:
+● Workload requirements.
+● Service level agreements.
+● Response times.
+● Projected growth.
+● Lifetime of your application.
+For projected growth, you need to consider whether your design will meet your
+needs in six months time, or one year from now. If the application has a lifetime of
+only six months, are you prepared to trade some extensibility for performance? If
+your application is likely to have a long lifetime, what performance are you willing
+to trade for maintainability? 
+
+
+
+Step 4. Identify Budget
+Budgets are your constraints. For example, what is the longest acceptable amount of
+time that an operation should take to complete, beyond which your application fails
+to meet its performance objectives.
+Your budget is usually specified in terms of the following:
+● Execution time.
+● Resource utilization.
+Execution Time
+Your execution time constraints determine the maximum amount of time that
+particular operations can take. 
+
+Resource Utilization
+Resource utilization requirements define the threshold utilization levels for
+available resources. For example, you might have a peak processor utilization limit
+of 75 percent and your memory consumption must not exceed 50 MB.
+Common resources to consider include the following:
+● CPU.
+● Memory.
+● Network I/O.
+● Disk I/O. 
+
+Additional Considerations
+Execution time and resource utilization are helpful in the context of your
+performance objectives. However, budget has several other dimensions you may
+be subject to. Other considerations for budget might include the following:
+● Network. Network considerations include bandwidth.
+● Hardware. Hardware considerations include items, such as servers, memory,
+and CPUs.
+● Resource dependencies. Resource dependency considerations include items, such
+as the number of available database connections and Web service connections.
+● Shared resources. Shared resource considerations include items, such as the
+amount of bandwidth you have, the amount of CPU you get if you share a server
+with other applications, and the amount of memory you get.
+● Project resources. From a project perspective, budget is also a constraint, such as
+time and cost. 
+
+Step 5. Identify Processing Steps
+Itemize your scenarios and divide them into separate processing steps, such as those
+shown in Table 2.3. If you are familiar with UML, use cases and sequence diagrams
+can be used as input. Similarly, Extreme Programming user stories can provide useful
+input to this step.
+Table 2.3: Processing Steps
+Processing Steps
+1. An order is submitted by client.
+2. The client authentication token is validated.
+3. Order input is validated.
+4. Business rules validate the order.
+5. The order is sent to a database server.
+6. The order is processed.
+7. A response is sent to the client.
+An added benefit of identifying processing steps is that they help you identify
+those points within your application where you should consider adding custom
+instrumentation. Instrumentation helps you to provide actual costs and timings when
+you begin testing your application.
+
+
+Step 6. Allocate Budget
+Spread your budget (determined in Step 4, “Identify Budget”) across your processing
+steps (determined in Step 5, “Identify Processing Steps”) to meet your performance
+objectives. You need to consider execution time and resource utilization. Some of the
+budget may apply to only one processing step. Some of the budget may apply to the
+scenario and some of it may apply across scenarios.
+Assigning Execution Time to Steps
+When assigning time to processing steps, if you do not know how much time to
+assign, simply divide the total time equally between the steps. At this point, it is not
+important for the values to be precise because the budget will be reassessed after
+measuring actual time, but it is important to have an idea of the values. Do not insist
+on perfection, but aim for a reasonable degree of confidence that you are on track. 
+
+You do not want to get stuck, but, at the same time, you do not want to wait until
+your application is built and instrumented to get real numbers. Where you do not
+know execution times, you need to try spreading the time evenly, see where there
+might be problems or where there is tension.
+If dividing the budget shows that each step has ample time, there is no need
+to examine these further. However, for the ones that look risky, conduct some
+experiments (for example, with prototypes) to verify that what you will need to
+do is possible, and then proceed.
+Note that one or more of your steps may have a fixed time. For example, you may
+make a database call that you know will not complete in less than 3 seconds. Other
+times are variable. The fixed and variable costs must be less than or equal to the
+allocated budget for the scenario.
+Assigning Resource Utilization Requirements
+When assigning resources to processing steps, consider the following:
+● Know the cost of your materials. For example, what does technology x cost in
+comparison to technology y.
+● Know the budget allocated for hardware. This defines the total resources available
+at your disposal.
+● Know the hardware systems already in place.
+● Know your application functionality. For example, heavy XML document
+processing may require more CPU, chatty database access or Web service
+communication may require more network bandwidth, or large file uploads
+may require more disk I/O. 
+
+
+Step 7. Evaluate
+Evaluate the feasibility and effectiveness of the budget before time and effort is spent
+on prototyping and testing. Review the performance objectives and consider the
+following questions:
+● Does the budget meet the objectives?
+● Is the budget realistic? It is during the first evaluation that you identify new
+experiments you should do to get more accurate budget numbers.
+● Does the model identify a resource hot spot?
+● Are there more efficient alternatives?
+● Can the design or features be reduced or modified to meet the objectives?
+● Can you improve efficiency in terms of resource consumption or time?
+● Would an alternative pattern, design, or deployment topology provide a better
+solution? 
+● What are you trading off? Are you trading productivity, scalability,
+maintainability, or security for performance?
+● Consider the following actions:
+● Modify your design.
+● Reevaluate requirements.
+● Change the way you allocate budget.
+
+
+Step 8. Validate
+Validate your model and estimates. Continue to create prototypes and measure the
+performance of the use cases by capturing metrics. This is an ongoing activity that
+includes prototyping and measuring. Continue to perform validation checks until
+your performance goals are met.
+The further you are in your project’s life cycle, the greater the accuracy of the
+validation. Early on, validation is based on available benchmarks and prototype
+code, or just proof-of-concept code. Later, you can measure the actual code as your
+application develops. 
+
