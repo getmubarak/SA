@@ -20,3 +20,5 @@ Reliability is a measure of how often the IT system fails to operate. As there a
 
 Resiliency is a measure of the IT system's ability to self-recover from problems that might otherwise cause it to fail,
 Resiliency is the ability of a cloud-based service to withstand certain types of failure and yet remain functional from the customer perspective.  In other words, reliability is the outcome and resilience is the way you achieve the outcome. 
+
+Not only is availability a function of reliability, but it is also a function of maintainability.  Reliable applications should maintain a pre-defined percentage of uptime (availability). Just as important, applications should be able to recover from failures (resiliency).
