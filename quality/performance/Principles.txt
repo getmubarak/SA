@@ -1,0 +1,63 @@
+● Design coarse-grained services. Coarse-grained services minimize the number
+of client-service interactions and help you design cohesive units of work. Coarsegrained services also help abstract service internals from the client and provide a
+looser coupling between the client and service. Loose coupling increases your
+ability to encapsulate change. If you already have fine-grained services, consider
+wrapping them with a facade layer to help achieve the benefits of a coarse-grained
+service.
+● Minimize round trips by batching work. Minimize round trips to reduce call
+latency. For example, batch calls together and design coarse-grained services that
+allow you to perform a single logical operation by using a single round trip. Apply
+this principle to reduce communication across boundaries such as threads,
+processes, processors, or servers. This principle is particularly important when
+making remote server calls across a network.
+● Acquire late and release early. Minimize the duration that you hold shared and
+limited resources such as network and database connections. Releasing and
+re-acquiring such resources from the operating system can be expensive, so
+consider a recycling plan to support “acquire late and release early.” This enables
+you to optimize the use of shared resources across requests.
+● Evaluate affinity with processing resources. When certain resources are only
+available from certain servers or processors, there is an affinity between the
+resource and the server or processor. While affinity can improve performance,
+it can also impact scalability. Carefully evaluate your scalability needs. Will you
+need to add more processors or servers? If application requests are bound by
+affinity to a particular processor or server, you could inhibit your application’s
+ability to scale. As load on your application increases, the ability to distribute
+processing across processors or servers influences the potential capacity of your
+application. 
+● Put the processing closer to the resources it needs. If your processing involves a
+lot of client-service interaction, you may need to push the processing closer to the
+client. If the processing interacts intensively with the data store, you may want to
+push the processing closer to the data.
+● Pool shared resources. Pool shared resources that are scarce or expensive to create
+such as database or network connections. Use pooling to help eliminate
+performance overhead associated with establishing access to resources and to
+improve scalability by sharing a limited number of resources among a much larger
+number of clients.
+● Avoid unnecessary work. Use techniques such as caching, avoiding round trips,
+and validating input early to reduce unnecessary processing. For more
+information, see “Cut the Deadwood,” above.
+● Reduce contention. Blocking and hotspots are common sources of contention.
+Blocking is caused by long-running tasks such as expensive I/O operations.
+Hotspots result from concentrated access to certain data that everyone needs.
+Avoid blocking while accessing resources because resource contention leads to
+requests being queued. Contention can be subtle. Consider a database scenario.
+On the one hand, large tables must be indexed very carefully to avoid blocking
+due to intensive I/O. However, many clients will be able to access different parts
+of the table with no difficulty. On the other hand, small tables are unlikely to have
+I/O problems but might be used so frequently by so many clients that they are
+hotly contested.
+Techniques for reducing contention include the efficient use of shared threads and
+minimizing the amount of time your code retains locks.
+● Use progressive processing. Use efficient practices for handling data changes.
+For example, perform incremental updates. When a portion of data changes,
+process the changed portion and not all of the data. Also consider rendering
+output progressively. Do not block on the entire result set when you can give
+the user an initial portion and some interactivity earlier.
+● Process independent tasks concurrently. When you need to process multiple
+independent tasks, you can asynchronously execute those tasks to perform them
+concurrently. Asynchronous processing offers the most benefits to I/O bound
+tasks but has limited benefits when the tasks are CPU-bound and restricted to a
+single processor. If you plan to deploy on single-CPU servers, additional threads
+guarantee context switching, and because there is no real multithreading, there are
+likely to be only limited gains. Single CPU-bound multithreaded tasks perform
+relatively slowly due to the overhead of thread switching. 
