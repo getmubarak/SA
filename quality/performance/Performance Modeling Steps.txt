@@ -1,0 +1,27 @@
+The performance modeling process consists of the following steps:
+1. Identify key scenarios. Identify those scenarios in which performance is
+important and the ones that pose the most risk to your performance objectives.
+
+2. Identify workloads. Identify how many users, and how many concurrent users,
+your system needs to support.
+
+3. Identify performance objectives. Define performance objectives for each of your
+key scenarios. Performance objectives reflect business requirements. 
+
+4. Identify budget. Identify your budget or constraints. This includes the maximum
+execution time in which an operation must be completed and resource utilization
+such as CPU, memory, disk I/O, and network I/O constraints.
+
+5. Identify processing steps. Break your scenarios down into component
+processing steps.
+
+6. Allocate budget. Spread your budget determined in Step 4 across your
+processing steps determined in Step 5 to meet the performance objectives you
+defined in Step 3.
+
+7. Evaluate. Evaluate your design against objectives and budget. You may need to
+modify design or spread your response time and resource utilization budget
+differently to meet your performance objectives.
+
+8. Validate. Validate your model and estimates. This is an ongoing activity and
+includes prototyping, testing, and measuring
