@@ -1,0 +1,8 @@
+Data-centered architecture
+Data-flow architecture
+Layered architecture
+Event Driven Architecture
+Hierarchical Architecture
+Component-Based Architecture
+Interaction-Oriented Architecture
+Distributed Architecture
