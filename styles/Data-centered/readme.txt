@@ -1,0 +1,1 @@
+In data-centered architecture, the data is centralized and accessed frequently by other components, which modify data. The components access a shared data structure and they interact only through the data store.
