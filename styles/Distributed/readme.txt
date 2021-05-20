@@ -16,3 +16,7 @@ A service is a component of business functionality that is well-defined, self-co
 
 Microservice Architecture
 architectural style that structures an application as a collection of services that are. Highly maintainable and testable. Loosely coupled. Independently deployable.
+
+A peer-to-peer (P2P) 
+architecture consists of a decentralized network of peers -nodes that are both clients and servers. P2P networks distribute the workload between
+peers, and all peers contribute and consume resources within the network without the need for a centralized server.
