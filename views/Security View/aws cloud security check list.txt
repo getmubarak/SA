@@ -1,0 +1,60 @@
+IAM
+Avoid using AWS root account user access keys as it gives full access to all resources
+MFA authentication is enabled for the root account to provide two-factor authentication
+Assign individual IAM users with necessary permissions to enable login
+Ensure User Accounts also have MFA authentication
+IAM Access Keys must be rotated at periodic intervals
+Ensure a strong password policy for users
+Assign permissions to users based on User Groups, instead of individual IAM users
+Provide access to a resource through IAM Roles
+Grant least access while creating IAM Policies, needed to perform the necessary actions
+Attach IAM Policies to Groups or Roles on creation
+If required, conditions can be defined for Policies under which access is granted to a resource
+Get rid of unnecessary IAM credentials, those with are inactive or unused
+Use IAM Roles to grant access to applications on EC2 Instances
+
+S3
+Ensure S3 buckets are not publicly accessible (public read or write permissions) — users can enable ‘Amazon S3 block public access’
+Make use of object-level or bucket-level permissions in addition to IAM Policies to grant access to resources
+Enable MFA Delete to prevent accidental deletion of buckets
+Consider encryption of stored data, which can be done in two ways — server-side and client-side encryption
+Enable encryption of inbound and outbound data traffic, through SSL endpoints
+Configure S3 lifecycle management through rule-based actions and use versioning to store and retrieve multiple versions of an object in a bucket, to deal with accidental deletions
+Ensure S3 access logging is enabled
+Constantly audit and monitor S3 buckets using CloudWatch metrics
+EC2, VPC & EBS
+Ensure data and disk volumes in EBS are encrypted with AES-256, the industry standard algorithm
+Restrict access to instances from limited IP ranges using Security Groups
+Limit the range of open ports on EC2 security groups, to prevent exposure to vulnerabilities
+Ensure ELBs have a valid security group attached to it
+Monitor and optimize default security groups, as they allow unrestricted access for inbound and outbound traffic
+Ensure restricted inbound access to SSH, FTP, SMTP, MySQL, PostgreSQL, MongoDB, MSSQL, CIFS, etc; to required entities only
+Use IAM roles to grant access to EC2, instead of access keys for temporary requirements
+If you’re using IAM user access keys for long term permissions, ensure that you don’t embed the keys directly into code, generate different keys for different applications, rotate your access keys, use MFA authentication and decommission unused key pairs.
+Enable and activate your VPC flow logs to record inbound and outbound traffic in your VPC for better monitoring and early diagnosis
+Delete unused Virtual Private Gateways and VPC Internet Gateways
+Make sure that no VPC endpoints are exposed, by checking the principal value in the policy
+Ensure no ACLs allow unrestricted inbound or outbound access
+
+CloudTrail
+Ensure CloudTrail is activated across all regions, and for global services like IAM, STS, etc
+It is recommended to log to a centralized S3 bucket
+Make sure both CloudTrail itself and CloudTrail logging are enabled for all regions
+Ensure CloudTrail log file integrity validation is enabled
+Ensure CloudTrail log files are encrypted
+
+RDS
+Ensure RDS security groups do not allow unrestricted access
+Ensure encryption of the RDS instances and snapshots, using AES-256 level encryption
+Protect data in transit to RDS through SSL endpoints
+Monitor control to RDS using AWS KMS and Customer Managed Keys
+Ensure RDS database instances and snapshots are not publicly accessible
+Enable the auto minor upgrade feature for RDS
+
+Redshift
+Enable require_ssl parameter in all Redshift clusters to minimize risk for encryption of data in transit for Redshift, and to connect your SQL client with your cluster
+Enable Redshift Cluster encryption
+Ensure Redshift user activity logging is enabled
+Ensure Redshift encryption with KMS Customer Managed Keys
+It is recommended that Redshift clusters are launched within a VPC for better control
+Ensure that the Redshift clusters are not publicly accessible
