@@ -44,6 +44,8 @@ There are two categories of Identity and access management:
 
 Azure Active Directory: Authentication repository supports Azure’s multi-tenant, cloud-based directory, and multi-identity management services.
 Azure Multi-Factor Authentication: A security provision that utilizes several authentications and verification methods before accessing protected information.
+
+
 Security Checklist for Azure
 Check out our Azure Security Services Checklist for better securing the data on Azure.
 
