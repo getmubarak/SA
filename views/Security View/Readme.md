@@ -16,6 +16,7 @@
 # Auditing
 * Are audit logs created by the application or system ensure transactions are date/time stamped along with who made the transaction?
 * Does your application logs all security-level important events like successful and failed authentication, data access, modification, network access, etc.? The log should include time of the event, user identity, location with machine name, etc. Identify which events are being logged
+* Application logs are protected against tampering
 
 # Validation
 * Validation is performed both at presentation and business logic layer
@@ -43,5 +44,12 @@
 * If there is a configuration UI, it is provided as a separate administrative UI.
 
 # Exception Handling
+* Insecure exception handling can expose the valuable information, which can be used by the attacker to fine-tune his attack. 
+* Without exception management, information such as stack trace, framework details, server details, SQL query, internal path and other sensitive information can be exposed. Check whether centralized exception management is in place, with minimum information being displayed.
 
+# Infrastructure
+* Review the firewall policies defined for the application. What type of traffic is allowed and what type of traffic is blocked?
+* An application may communicate with other application as well. Identify which ports and services are required to be open for the application.
+* Components of the application should be segregated from each other. For example, the application server and database server should not reside in the same machine/network.
+* Ports running clear text services like (HTTP, FTP, etc.) should be closed and not used for any part of the application.
 
