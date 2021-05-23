@@ -1,0 +1,49 @@
+Virtual server disks 
+databases management
+* Azure Disks
+* EBS
+* Google Persistent Disk 
+
+Shared files (Block Storage)
+Lift-and-shift application support
+Analytics for big data
+Content management system and web server support
+* Azure Files
+* EFS
+* Google Filestore
+
+ Object Storage
+ Data lake and big data analytics
+ Backup and restoration
+ Reliable disaster recovery
+* Azure Blobs
+* S3
+* google Cloud Storage
+
+Archiving and backup
+* Azure Archive Blob Storage
+* AWS Glacier storage service
+* Google Archival Cloud Storage.
+
+Relation Database
+* Azure SQL, MySql, Postgres Database
+* Aws RDS
+* GCP Cloud SQL
+
+Key Value Storage
+* Azure Table Storage
+* Cosmos 
+* SimpleDB
+* Google Cloud Datastore
+
+Document Storage
+* Cosmos 
+* Dynamo DB
+* Amazon DocumentDB
+
+Graph Storage
+* Cosmos 
+* Amazon Neptune
+
+
+
