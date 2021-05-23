@@ -42,6 +42,11 @@ Document Storage
 * Amazon DocumentDB
 
 Graph Storage
+for data that looks like a network
+Social relationships (nodes are people)
+Public transport links (nodes can be bus or train stations)
+Roadmaps (nodes are street intersections or highway intersections)
+Anything requiring traversing a graph to find the shortest routes, nearest neighbors, etc.)
 * Cosmos 
 * Amazon Neptune
 
