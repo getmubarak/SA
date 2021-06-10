@@ -1,9 +1,10 @@
 ![alt text](https://github.com/getmubarak/SA/blob/master/views/Data%20View/Cloud%20Storage.png)
 
 # Virtual server disks 
-## Azure Disks
-## EBS
-## Google Persistent Disk 
+## providers
+- Azure Disks 
+- EBS
+- Google Persistent Disk 
 
 # Shared files (Block Storage)
 ## Providers 
