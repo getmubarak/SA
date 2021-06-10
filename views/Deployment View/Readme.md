@@ -1,18 +1,46 @@
-* Is there a clear physical architecture?
-* What hardware does this include across all tiers?
-* Does it cater for redundancy, failover and disaster recovery if applicable?
-* Is it clear how the chosen hardware components have been sized?
-* If multiple boxes and sites are used, what are the network links between them?
-* Who is responsible for support and maintenance of the infrastructure?
-* Are there central teams to look after common infrastructure (e.g. databases, message buses, application servers, networks, routers, switches, load balancers, reverse proxies, internet connections, etc)?
-* Who owns the resources?
-* Are there sufficient resources for development, testing, acceptance, pre-production, production, etc?
-* Is it clear how the software components will be deployed across the hardware elements described in the physical view? (e.g. one-to-one mapping, * multiple software components per server, etc)
-* If this is still to be decided, what are the options and have they been documented?
-* Is it understood how memory and CPU will be partitioned between the processes running on a single hardware node?
-* Which components are active-active and which are active-passive?
-* Which components can be scaled-out?
-* Is it clear how data is replicated across sites?
-* Has the rollout and recovery strategy been defined (this might be in a separate document, but referenced)?
-* How are the components installed and configured?
+Virtual Machine (IAAS)
+ provision individual VMs along with the associated networking and storage components. 
+ Then you deploy whatever software and applications you want onto those VMs. 
+ This model is the closest to a traditional on-premises environment, except that Microsoft/AWS manages the infrastructure. You still manage the individual VMs.
+* Azure VM
+* EC2
+* Google Compute Engine
+
+Managed web server (PAAS 1.0)
+Provides a managed Virtual Machine with web server. 
+for hosting web apps using ASP.NET, ASP.NET Core, Java, Ruby, Node.js, PHP, or Python on Windows and Linux.
+* Azure App Service
+* AWS Elastic Beanstalk
+* Google App Engine
+
+Managed docker server (PAAS 1.0)
+Provides a managed Virtual Machine with docker.  
+deploy and run containerized applications on Windows and Linux
+* Azure App Service
+* AWS Elastic Beanstalk
+* Google App Engine
+
+Managed Kubernetes Server (PAAS 1.0)
+A managed Kubernetes service for running containerized applications.
+* Azure kubernetes Service
+* Amazon Elastic Kubernetes Service (Amazon EKS)
+* Amazon Elastic Container Service
+* Google Kubernetes Engine (GKE)
+
+Serverless Webserver Server (PAAS 2.0)
+lets you run code without provisioning or managing servers. You pay only for the compute time you consume—there is no charge when your code is not running. 
+* Azure Functions
+* AWS Lambda
+* Google Cloud Function
+
+Serverless docker Server (PAAS 2.0)
+* Azure Functions
+* AWS Lambda
+* Google Cloud Function
+
+Serverless Kubernetes Server (PAAS 2.0)
+The fastest and simplest way to run a container in cloud, without having to provision any virtual machines and without having to adopt a higher-level service.
+* Azure Container Instance
+* AWS Fargate for Amazon ECS
+* Google Cloud Run
 
