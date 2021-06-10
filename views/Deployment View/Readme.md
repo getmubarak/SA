@@ -1,3 +1,5 @@
+![alt text](https://github.com/getmubarak/SA/blob/master/views/Deployment%20View/Cloud%20Compute.png)
+
 Virtual Machine (IAAS)
  provision individual VMs along with the associated networking and storage components. 
  Then you deploy whatever software and applications you want onto those VMs. 
