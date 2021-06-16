@@ -2,7 +2,9 @@ In data-centered architecture, the data is centralized and accessed frequently b
 
 
 Repository Architecture Style
-In Repository Architecture Style, the data store is passive and the clients (software components or agents) of the data store are active, which control the logic flow. 
+In Repository Architecture Style, the data store is passive and the clients of the data store are active, which control the logic flow. The participating components check the data-store for changes. One of the most well-known examples of the data-centered architecture, is a database architecture
+
 
 Blackboard Architecture Style
-In Blackboard Architecture Style, the data store is active and its clients are passive.
+In Blackboard Architecture Style, the data store is active and its clients are passive. BLACKBOARD is a specialised variant of SHARED REPOSITORY  A more generic version of a message queue. The blackboard pattern generalizes the observer. It completely decouples producers and consumers of information.
+
