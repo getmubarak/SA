@@ -22,6 +22,8 @@ DDD Layered
 Domain-Driven Design is an approach to software development that centers the development on programming a domain model that has a rich understanding of the processes and rules of a domain. 
 
 Hexagonal
-The idea behind it is to put inputs and outputs at the edges of your design. In doing so, you isolate the central logic (the core) of your application from outside concerns. Having inputs and outputs at the edge means you can swap out their handlers without changing the core code.
+The idea behind it is to put inputs and outputs at the edges of your design. In doing so, you isolate the central logic (the core) of your application from outside concerns. Having inputs and outputs at the edge means you can swap out their handlers without changing the core code. 
+
+Inversion of control, To ensure the isolation of the Hexagon, the dependencies on downstream layers have been inverted.
 
 
