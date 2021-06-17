@@ -24,6 +24,8 @@ Domain-Driven Design is an approach to software development that centers the dev
 Hexagonal
 The idea behind it is to put inputs and outputs at the edges of your design. In doing so, you isolate the central logic (the core) of your application from outside concerns. Having inputs and outputs at the edge means you can swap out their handlers without changing the core code. 
 
+we do have layers, but the inner layers are the abstractions, while the other layers are the actual implementation.
+ 
 Inversion of control, To ensure the isolation of the Hexagon, the dependencies on downstream layers have been inverted.
 
 
