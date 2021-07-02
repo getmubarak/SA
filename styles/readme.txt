@@ -1,8 +1,4 @@
-Data-centered architecture
-Data-flow architecture
-Layered architecture
-Event Driven Architecture
-Hierarchical Architecture
-Component-Based Architecture
-Interaction-Oriented Architecture
-Distributed Architecture
+![alt text](https://raw.githubusercontent.com/getmubarak/SA/master/views/Logical%20View/LOB/layered.png)
+
+
+
