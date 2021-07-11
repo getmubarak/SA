@@ -1,4 +1,7 @@
 # SA
+How to Create Application Architecture Diagram Online?
+https://geekflare.com/create-application-architecture-diagram/
+
 Certification
 https://medium.com/@nvashanin/certificates-in-software-architecture-6b18e0102fe7
 
