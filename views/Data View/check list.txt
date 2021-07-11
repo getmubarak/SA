@@ -1,4 +1,9 @@
-* Is there a high level understanding of how much storage will be required to persist data?
+How is data being processed currently?
+Where is the data being stored and used?
+How much data are we talking about?
+
+
+Is there a high level understanding of how much storage will be required to persist data?
 * What are the archiving and back-up strategies?
 * Are there any regulatory requirements for the long term archival of business data?
 * Likewise for log files and audit trails?
