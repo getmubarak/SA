@@ -1,3 +1,6 @@
+A system is robust if it acts reasonably in severe or unusual conditions. It isnot possible to give a precise definition of robustness, but one characteristic of
+robust systems is that their specifications include “desired reactions to undesirable situations”
+
 The opposite of robust code is fragile code. The harder it is to create an error of any type or form that the computer cannot handle safely the more robust the software is. program that accepts "pancakes" for a date input and pops up a error box. 
 
 "robustness" describes an application's response to its input  while "fault-tolerance" describes an application's response to its environment.
