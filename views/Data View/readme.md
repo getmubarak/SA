@@ -1,3 +1,5 @@
+How data is collected, processed, stored, and used. 
+
 ![alt text](https://github.com/getmubarak/SA/blob/master/views/Data%20View/Cloud%20Storage.png)
 
 # Virtual server disks 
