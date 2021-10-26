@@ -12,4 +12,4 @@
 * Each component only contains functionality specifically related to that component.
 * The tradeoffs of abstraction and loose coupling are well understood for your design. For instance, it adds overhead but it simplifies the build * process and improves maintainability.
 
-![alt text](https://github.com/getmubarak/SA/blob/master/views/Data%20View/Cloud%20Storage.png)
+![alt text](https://github.com/getmubarak/SA/blob/master/views/Logical%20View/Messaging.png)
