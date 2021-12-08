@@ -31,7 +31,13 @@ https://www.youtube.com/watch?v=fgIgOU0yi0w
 https://www.youtube.com/watch?v=Tp8kpMe-ZKw
 https://tianpan.co/notes/120-designing-uber
 https://github.com/puncsky/system-design-and-architecture/blob/master/en/120-designing-uber.md
+https://www.codekarle.com/system-design/Uber-system-design.html
 
-Netflix
+## Netflix
 https://medium.com/@narengowda/netflix-system-design-dbec30fede8d
 https://www.geeksforgeeks.org/system-design-netflix-a-complete-architecture/
+
+## Facebook
+https://leetcode.com/discuss/interview-question/system-design/719253/design-facebook-system-design-interview
+https://youtu.be/9-hjBGxuiEs
+https://liuzhenglaichn.gitbook.io/system-design/news-feed/design-a-news-feed-system
