@@ -20,3 +20,9 @@ Twitter is a microblogging and social networking service on which users post and
 - Total photo storage for 10 years =  10 years x ~ 300 days a year x  100 GB per day ~ 300 TB. 
 - Monthly upload bandwidth = 30 (days) x   100 GB (Tweets) ~ 3 TB per month.
 - Monthly download bandwidth = 3 TB (Monthly Upload capacity)  x  80 / 20  = 12 TB per month.
+
+
+### Reference
+https://www.codercrunch.com/design/1766092915/design-twitter
+http://highscalability.com/blog/2013/7/8/the-architecture-twitter-uses-to-deal-with-150m-active-users.html
+http://www.timdeboer.eu/paper_publishing/Twitter_An_Architectural_Review.pdf
