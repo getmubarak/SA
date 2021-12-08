@@ -1,13 +1,13 @@
-### 1. Understand the System
+### 1. Context
 Twitter is a microblogging and social networking service on which users post and interact with messages known as "tweets". Users can follow other users and get tweet notifications from the users they follow. Tweets are short messages limited to 280 characters earlier the limit was 140 characters.
 
-### 2. Define Functional Requirements 
+### 2. Functional Requirements 
 - Users should be able to post a tweet.
 - Users should be able to like a tweet posted by other users.
 - Users should be able to follow or unfollow other users.
 - Users should be able to view Timeline i.e. NewsFeed from other users they are following.
 
-### 3. Define Non-Functional Requirements 
+### 3. Quality Requirements 
 - Let's assume the total users = 1 billion.
 - Total monthly active users  (MAU) = 40 % = 400 million.
 - Let's assume 25% of MAU as active daily, So daily active users (DAU) = 25% of 400 million  = 100 million per day.
