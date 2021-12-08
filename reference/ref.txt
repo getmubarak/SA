@@ -1,45 +1,17 @@
-## tinyurl
-https://www.codercrunch.com/design/1270253716/design-a-url-shortner-service
-https://github.com/puncsky/system-design-and-architecture/blob/master/en/84-designing-a-url-shortener.md
-https://youtu.be/AVztRY77xxA
 
-## instagram
-https://www.codercrunch.com/design/634265/designing-instagram
-https://youtu.be/9-hjBGxuiEs
 
-## twitter
-https://www.codercrunch.com/design/1766092915/design-twitter
-http://highscalability.com/blog/2013/7/8/the-architecture-twitter-uses-to-deal-with-150m-active-users.html
-http://www.timdeboer.eu/paper_publishing/Twitter_An_Architectural_Review.pdf
 
-## airbnb
-https://hackernoon.com/how-to-build-an-app-like-airbnb-405f3c5872f9
-https://medium.com/@himanishaik48/airbnb-system-design-most-frequently-asked-question-in-technical-interviews-262e999f437
-https://enqueuezero.com/airbnb-architecture.html
-https://www.codekarle.com/system-design/Airbnb-system-design.html
-https://github.com/puncsky/system-design-and-architecture/blob/master/en/177-designing-Airbnb-or-a-hotel-booking-system.md
+
 
 ## amazon
 https://medium.com/@kethan.pothula/amazon-system-design-and-architecture-d787a6572f35
 https://medium.com/double-pointer/system-design-interview-amazon-flipkart-ebay-or-similar-e-commerce-applications-35a0bc764421
 https://captionstrendingupdatede.blogspot.com/2021/04/system-design-for-ecommerce-website.html
 
-##uber
-https://www.educative.io/blog/uber-backend-system-design
-https://www.geeksforgeeks.org/system-design-of-uber-app-uber-system-architecture/
-https://medium.com/@narengowda/uber-system-design-8b2bc95e2cfe
-https://www.youtube.com/watch?v=fgIgOU0yi0w
-https://www.youtube.com/watch?v=Tp8kpMe-ZKw
-https://tianpan.co/notes/120-designing-uber
-https://github.com/puncsky/system-design-and-architecture/blob/master/en/120-designing-uber.md
-https://www.codekarle.com/system-design/Uber-system-design.html
+
 
 ## Netflix
 https://medium.com/@narengowda/netflix-system-design-dbec30fede8d
 https://www.geeksforgeeks.org/system-design-netflix-a-complete-architecture/
 
-## Facebook
-https://leetcode.com/discuss/interview-question/system-design/719253/design-facebook-system-design-interview
-https://youtu.be/9-hjBGxuiEs
-https://liuzhenglaichn.gitbook.io/system-design/news-feed/design-a-news-feed-system
 
