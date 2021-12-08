@@ -1,4 +1,4 @@
-### 1. Understand the System
+### 1. Context
 
 A URL shortener is used to create a short alternative URL to a perhaps a long URL for a resource. Both the short and the long URL point to the same resource. 
 
@@ -27,14 +27,14 @@ It is easy to encode a short URL into a QR code rather than using a long URL. Li
 - Aesthetically Pleasing : 
 Short URLs are easy on the eyes as they hide all the path and dynamic query parameters in the URL that are required by the landing page to function.
 
-### 2. Define Functional Requirements 
+### 2. Functional Requirements 
 - Users should be able to create a short URL by providing a long URL (anonymous or as authenticated user).
 - Users should be able to view the original page by entering the short URL.
 - Users should be able to specify an expiration time while creating the short URL(defaults to no expiration). Also, the system should be able to delete expired URLs.
 - The service keeps track of URL usage and analytics.
 - Bulk creation of short URLs via API 
 
-### 3. Define Non-Functional Requirements 
+### 3. Quality Requirements 
 
 - Assume the total users = 100 million. 
 - Let total monthly active users  (MAU) = 60 % = 60 million.
