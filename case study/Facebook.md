@@ -28,6 +28,6 @@ produced in this whole time is approximately 20,000 million or 20 billion.
 
 
 ### Reference
-https://leetcode.com/discuss/interview-question/system-design/719253/design-facebook-system-design-interview
-https://youtu.be/9-hjBGxuiEs
-https://liuzhenglaichn.gitbook.io/system-design/news-feed/design-a-news-feed-system
+- https://leetcode.com/discuss/interview-question/system-design/719253/design-facebook-system-design-interview
+- https://youtu.be/9-hjBGxuiEs
+- https://liuzhenglaichn.gitbook.io/system-design/news-feed/design-a-news-feed-system
