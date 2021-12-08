@@ -3,12 +3,6 @@
 
 
 
-## amazon
-https://medium.com/@kethan.pothula/amazon-system-design-and-architecture-d787a6572f35
-https://medium.com/double-pointer/system-design-interview-amazon-flipkart-ebay-or-similar-e-commerce-applications-35a0bc764421
-https://captionstrendingupdatede.blogspot.com/2021/04/system-design-for-ecommerce-website.html
-
-
 
 ## Netflix
 https://medium.com/@narengowda/netflix-system-design-dbec30fede8d
