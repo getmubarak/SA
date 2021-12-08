@@ -11,3 +11,13 @@ Build a online shopping system that stores an inventory of products under differ
 - Buyers can review and rate purchased products.
 
 ### 3. Quality Requirements
+
+
+### Reference
+
+
+
+## amazon
+- https://medium.com/@kethan.pothula/amazon-system-design-and-architecture-d787a6572f35
+- https://medium.com/double-pointer/system-design-interview-amazon-flipkart-ebay-or-similar-e-commerce-applications-35a0bc764421
+- https://captionstrendingupdatede.blogspot.com/2021/04/system-design-for-ecommerce-website.html
