@@ -30,4 +30,4 @@ Instagram reported 500+ million daily active Stories users worldwide, Stories is
 ### Reference
 - https://www.codercrunch.com/design/634265/designing-instagram
 - https://youtu.be/9-hjBGxuiEs
-
+- https://www.educative.io/courses/grokking-the-system-design-interview/m2yDVZnQ8lG
