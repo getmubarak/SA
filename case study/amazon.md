@@ -1,14 +1,13 @@
 ### 1. Context
+Build a online shopping system that stores an inventory of products under different categories, allow customers to search through them, and make purchases. Furthermore, how do you handle the expanding load on the website and prevent it from crashing down, particularly on busy days, such as the Black Friday Sale?
 
 ### 2. Functional requirements
-- Search :
-The customers should be able to search the required goods they want to buy along with that we need to provide the information that we can deliver them or not.
-If the person lives in the remote area where we can’t deliver we need to mention it on the first page itself otherwise it leads to bad user experience.
-And if we can deliver we need to mention the maximum time required for delivery.
-- Cart/wishlist :
-A cart is a place where the user can add their favorite items or the items they want to buy.
-- Ceckout : 
-Checkout is the place where the customer will confirm the order and make payment for the goods.
-- View orders :
-In this sector, people can view their present and past orders .they can even track the present order and the expected delivery date.
+- Sellers should be able to add, delete and modify products they want to sell.
+- The website should include a catalog of products.
+- Buyers can search products by name, keyword or category.
+- Buyers can add, delete or update items in a cart.
+- Buyers can purchase items in the cart and make payments.
+- Buyers can view their previous orders.
+- Buyers can review and rate purchased products.
 
+### 3. Quality Requirements
