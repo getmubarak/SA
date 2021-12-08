@@ -50,3 +50,7 @@ Short URLs are easy on the eyes as they hide all the path and dynamic query para
 - Monthly upload bandwidth = 30 (days) x  ( 120 GB ) ~ 360 GB per month.
 - Monthly download bandwidth = 360 GB (Monthly Upload capacity)  x  90 / 10  = 3240 GB per month ~ 4 TB per month.
 
+### Reference
+https://www.codercrunch.com/design/1270253716/design-a-url-shortner-service
+https://github.com/puncsky/system-design-and-architecture/blob/master/en/84-designing-a-url-shortener.md
+https://youtu.be/AVztRY77xxA
