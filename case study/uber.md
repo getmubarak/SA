@@ -35,11 +35,11 @@ New longitude (8 bytes)
 
 
 ### Reference
-https://www.educative.io/blog/uber-backend-system-design
-https://www.geeksforgeeks.org/system-design-of-uber-app-uber-system-architecture/
-https://medium.com/@narengowda/uber-system-design-8b2bc95e2cfe
-https://www.youtube.com/watch?v=fgIgOU0yi0w
-https://www.youtube.com/watch?v=Tp8kpMe-ZKw
-https://tianpan.co/notes/120-designing-uber
-https://github.com/puncsky/system-design-and-architecture/blob/master/en/120-designing-uber.md
-https://www.codekarle.com/system-design/Uber-system-design.html
+- https://www.educative.io/blog/uber-backend-system-design
+- https://www.geeksforgeeks.org/system-design-of-uber-app-uber-system-architecture/
+- https://medium.com/@narengowda/uber-system-design-8b2bc95e2cfe
+- https://www.youtube.com/watch?v=fgIgOU0yi0w
+- https://www.youtube.com/watch?v=Tp8kpMe-ZKw
+- https://tianpan.co/notes/120-designing-uber
+- https://github.com/puncsky/system-design-and-architecture/blob/master/en/120-designing-uber.md
+- https://www.codekarle.com/system-design/Uber-system-design.html
