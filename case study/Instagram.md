@@ -28,6 +28,6 @@ Instagram reported 500+ million daily active Stories users worldwide, Stories is
 - Monthly download bandwidth = 2PB  (Monthly Upload capacity)  x  80 / 20  = 8 PB per month.
 
 ### Reference
-https://www.codercrunch.com/design/634265/designing-instagram
-https://youtu.be/9-hjBGxuiEs
+- https://www.codercrunch.com/design/634265/designing-instagram
+- https://youtu.be/9-hjBGxuiEs
 
