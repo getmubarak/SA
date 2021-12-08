@@ -20,6 +20,7 @@ https://github.com/puncsky/system-design-and-architecture/blob/master/en/177-des
 
 ## amazon
 https://medium.com/@kethan.pothula/amazon-system-design-and-architecture-d787a6572f35
+https://medium.com/double-pointer/system-design-interview-amazon-flipkart-ebay-or-similar-e-commerce-applications-35a0bc764421
 
 ##uber
 https://www.educative.io/blog/uber-backend-system-design
