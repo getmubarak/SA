@@ -24,11 +24,11 @@ Outside User (consumer):-
 
 
 ### Reference
-https://hackernoon.com/how-to-build-an-app-like-airbnb-405f3c5872f9
-https://medium.com/@himanishaik48/airbnb-system-design-most-frequently-asked-question-in-technical-interviews-262e999f437
-https://enqueuezero.com/airbnb-architecture.html
-https://www.codekarle.com/system-design/Airbnb-system-design.html
-https://github.com/puncsky/system-design-and-architecture/blob/master/en/177-designing-Airbnb-or-a-hotel-booking-system.md
+- https://hackernoon.com/how-to-build-an-app-like-airbnb-405f3c5872f9
+- https://medium.com/@himanishaik48/airbnb-system-design-most-frequently-asked-question-in-technical-interviews-262e999f437
+- https://enqueuezero.com/airbnb-architecture.html
+- https://www.codekarle.com/system-design/Airbnb-system-design.html
+- https://github.com/puncsky/system-design-and-architecture/blob/master/en/177-designing-Airbnb-or-a-hotel-booking-system.md
 
 
 
