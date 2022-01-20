@@ -13,3 +13,4 @@ Books:
 ### Pattern Oriented Software Architect v1,2,3,4
 ### Beautiful Architecture
 ### 97 things every architect should know
+### 50 rules for high Scalability
