@@ -54,3 +54,4 @@ Short URLs are easy on the eyes as they hide all the path and dynamic query para
 - https://www.codercrunch.com/design/1270253716/design-a-url-shortner-service
 - https://github.com/puncsky/system-design-and-architecture/blob/master/en/84-designing-a-url-shortener.md
 - https://youtu.be/AVztRY77xxA
+- https://www.youtube.com/watch?v=YN7hCvBOFxk
