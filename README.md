@@ -14,3 +14,4 @@ Books:
 ### Beautiful Architecture
 ### 97 things every architect should know
 ### 50 rules for high Scalability
+### Evaluating Software Architectures: Methods and Case Studies
