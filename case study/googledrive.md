@@ -11,7 +11,11 @@ We need to design a service like Google Drive or Dropbox which allows users to s
 #### The system should support offline editing. Users should be able to add/delete/modify files offline and once they come online, changes should be synchronized to remote servers and other online devices.
 #### The system should support storing large files up to a GB. (Dropbox currently supports up to 50 GB)
 
-## Scale
+## Quality Requirements
+#### Reliability: The system should be highly reliable. Any file uploaded should not be lost. Users should be able to trust the system to store their important documents.
+#### Availability: The system should be highly available.
+#### Scalability: Users should be able to trust the system to have cloud storage you have unlimited storage as long as they are ready to pay for it.
+#### Interoperability: Users must be able to integrate their system with the Dropbox easily. Exchange of information must be fluent.
 #### Total Users : ~100 M
 #### Daily Active Users : ~50 M
 #### QPS : ~500M request per day (~9000 Queries Per Second)
