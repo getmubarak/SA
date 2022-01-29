@@ -1,4 +1,6 @@
+## Context -
 
+We need to design a service like Google Drive or Dropbox which allows users to store their data securely, synchronised & effectively on remote servers. User should be able to download and upload files from all their devices. System should be highly available, reliable and scalable.
 
 ## Functional Requirements -
 
