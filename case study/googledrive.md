@@ -3,7 +3,7 @@
 We need to design a service like Google Drive or Dropbox which allows users to store their data securely, synchronised & effectively on remote servers. User should be able to download and upload files from all their devices. System should be highly available, reliable and scalable.
 
 ## Functional Requirements -
-
+- Users should be able to sign up using their email address and subscribe to a plan. If they don’t subscribe, they will get 1 GB of free storage.
 - Users should be able to upload and download their files from any device.
 - Users should be able to share files and folders with other users.
 - File versioning should be able to restore the previous version of the file.
@@ -28,7 +28,12 @@ We need to design a service like Google Drive or Dropbox which allows users to s
 - Active Connections : 1 M active connections per minute
 
 ## Reference
-https://www.youtube.com/watch?v=U0xTu6E2CT8 <br>
-https://www.youtube.com/watch?v=AAMLzNaDkjk <br>
-https://codedaily.in/system-design-dropbox-google-drive/ <br>
-https://www.pankajtanwar.in/blog/system-design-how-to-design-google-drive-dropbox-a-cloud-file-storage-service <br>
+- https://www.youtube.com/watch?v=PE4gwstWhmc
+- https://www.youtube.com/watch?v=U0xTu6E2CT8 
+- https://www.youtube.com/watch?v=AAMLzNaDkjk 
+- https://codedaily.in/system-design-dropbox-google-drive/ 
+- https://www.pankajtanwar.in/blog/system-design-how-to-design-google-drive-dropbox-a-cloud-file-storage-service 
+- https://www.youtube.com/watch?v=8HaXU4aNTSg
+- https://systemdesignprimer.com/dropbox-system-design/#:~:text=28%20Apr%202020%20on%20System,anywhere%20with%20an%20Internet%20connection.
+- https://astikanand.github.io/techblogs/high-level-system-design/design-dropbox
+
