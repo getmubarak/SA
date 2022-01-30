@@ -35,6 +35,7 @@ New longitude (8 bytes)
 
 
 ### Reference
+- https://techtakshila.com/system-design-interview/chapter-3/
 - https://www.educative.io/blog/uber-backend-system-design
 - https://www.geeksforgeeks.org/system-design-of-uber-app-uber-system-architecture/
 - https://medium.com/@narengowda/uber-system-design-8b2bc95e2cfe
