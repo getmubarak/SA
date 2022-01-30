@@ -28,7 +28,7 @@ We need to design a service like Google Drive or Dropbox which allows users to s
 ((50 M x 200KB x 5 ) x 20) / 100 = 10 Tera Byte
 #### Active Connections : 1 M active connections per minute
 
-https://www.youtube.com/watch?v=U0xTu6E2CT8
-https://www.youtube.com/watch?v=AAMLzNaDkjk
-https://codedaily.in/system-design-dropbox-google-drive/
-https://www.pankajtanwar.in/blog/system-design-how-to-design-google-drive-dropbox-a-cloud-file-storage-service
+https://www.youtube.com/watch?v=U0xTu6E2CT8 <br>
+https://www.youtube.com/watch?v=AAMLzNaDkjk <br>
+https://codedaily.in/system-design-dropbox-google-drive/ <br>
+https://www.pankajtanwar.in/blog/system-design-how-to-design-google-drive-dropbox-a-cloud-file-storage-service <br>
