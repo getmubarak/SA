@@ -1,6 +1,5 @@
 * Hardware or software environment
 * End-user environment
-* End-user environment
 * Availability or volatility of resources
 * Standards compliance
 * Interoperability requirements
