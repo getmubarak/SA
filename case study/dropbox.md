@@ -1,5 +1,8 @@
 
+Dropbox is a cloud storage service that allows users to store their data on remote servers. The remote servers store files durably and securely, and these files are accessible anywhere with an Internet connection. Usually, these servers are maintained by cloud storage providers and made available to users over a network (typically through the Internet). Users pay for their cloud data storage.
 
+
+### Rquirements
 <ul>
 <li>Users should be able to sign up using their email addresses and subscribe to a premium plan. If they don’t subscribe, they will get 1 GB of free storage.</li>
 <li>Users should be able to upload and download their files from any device.</li>
@@ -10,7 +13,7 @@
 <li>ACID-ity is required: Atomicity, Consistency, Isolation, and Durability of all file operations should be guaranteed.</li>
 </ul>
 
-
+### Qualtiy Requirements
 <ul>
 <li>The total number of users = 500 million.</li>
 <li>Total number of daily active users = 100 million</li>
@@ -21,3 +24,4 @@
 <li>Total number of files = 500 million  * 200 = 100 billion</li>
 <li>Total storage required = 100 billion * 100 KB = 10 PB</li>
 </ul>
+
