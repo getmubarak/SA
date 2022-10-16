@@ -25,3 +25,8 @@ Dropbox is a cloud storage service that allows users to store their data on remo
 <li>Total storage required = 100 billion * 100 KB = 10 PB</li>
 </ul>
 
+### References
+- https://www.youtube.com/watch?v=h3vWyiRBZHc
+- https://www.youtube.com/watch?v=U0xTu6E2CT8
+- https://www.youtube.com/watch?v=3RHjRXWAUvg
+- 
