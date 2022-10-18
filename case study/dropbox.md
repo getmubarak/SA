@@ -56,8 +56,8 @@ Dropbox is a cloud storage service that allows users to store their data on remo
 - Block Service interacts with block storage for uploading and downloading of files. Clients connect with Block Service to upload or download file chunks.
 
 #### Cloud Meta Service
-Meta Service is responsible for synchronizing the file metadata from client to server. It’s also responsible to figure out the change set for different clients and broadcast it to them using Notification Service.
+- Meta Service is responsible for synchronizing the file metadata from client to server. It’s also responsible to figure out the change set for different clients and broadcast it to them using Notification Service.
 
 #### Cloud Notification Service
-Notification Service broadcasts the file changes to connected clients making sure any change to file is reflected all watching clients instantly.
+- Notification Service broadcasts the file changes to connected clients making sure any change to file is reflected all watching clients instantly.
 
