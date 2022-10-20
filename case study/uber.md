@@ -95,3 +95,17 @@ New longitude (8 bytes)
 - https://tianpan.co/notes/120-designing-uber
 - https://github.com/puncsky/system-design-and-architecture/blob/master/en/120-designing-uber.md
 - https://www.codekarle.com/system-design/Uber-system-design.html
+
+
+#### Services
+
+- Payment Service
+- Cab Finder
+- Trip Service
+- Rider Service
+- Location Service (Segment)
+- Map Service  
+- Fraud Detection Service
+- Route Service
+- Fare Service
+- Notification Service
