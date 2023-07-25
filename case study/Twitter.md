@@ -26,3 +26,8 @@ Twitter is a microblogging and social networking service on which users post and
 - https://www.codercrunch.com/design/1766092915/design-twitter
 - http://highscalability.com/blog/2013/7/8/the-architecture-twitter-uses-to-deal-with-150m-active-users.html
 - http://www.timdeboer.eu/paper_publishing/Twitter_An_Architectural_Review.pdf
+
+
+### notes
+- The Twitter 2010 dataset, is a social network of Twitter users, consisting of 12.71 million vertices and 0.23 billion edges.
+- 
