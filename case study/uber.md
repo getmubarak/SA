@@ -86,6 +86,7 @@ New longitude (8 bytes)
 
 
 ### Reference
+- https://highscalability.com/brief-history-of-scaling-uber/
 - https://techtakshila.com/system-design-interview/chapter-3/
 - https://www.educative.io/blog/uber-backend-system-design
 - https://www.geeksforgeeks.org/system-design-of-uber-app-uber-system-architecture/
