@@ -22,14 +22,15 @@ A global digital Aggregator Platform wants allow customers to apply for personal
 #### Customer Selects Loan Offer
 * Customer picks preferred loan offer from the list.
 * Emits event: LoanSelected[BankID].
-
-
-## Challenges
-- Frequent timeouts from third-party APIs (e.g., Credit Score API).
-- 
 #### Loan Disbursement
 * Reserves funds with chosen bank.
 * Calls payment gateway or bank API for fund disbursement.
 * Emits event: LoanDisbursed[BankID].
 #### Notification
 * Sends confirmation email/SMS to customer with loan details and payment schedule.
+
+
+
+## Challenges
+- Frequent timeouts from third-party APIs (e.g., Credit Score API).
+- 
