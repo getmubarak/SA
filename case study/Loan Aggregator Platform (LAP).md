@@ -4,8 +4,9 @@ steps
 ### Loan Application Submitted
 - Emit event: LoanApplied
 ### Credit Score Check (Service A) 
-- Listens to LoanApplied → Calls external Credit Bureau → Emit CreditChecked
-Risk Assessment (Service B) → Listens to CreditChecked → Computes risk profile → Emit RiskAssessed
+- Calls external Credit Bureau
+- Emit CreditChecked
+### Risk Assessment (Service B) → Listens to CreditChecked → Computes risk profile → Emit RiskAssessed
 KYC Verification (Service C) → Listens to RiskAssessed → Triggers third-party KYC → Emit KycVerified
 Loan Approval (Service D) → Listens to KycVerified → Approves loan → Emit LoanApproved
 Loan Disbursement (Service E) → Listens to LoanApproved → Reserves funds → Calls payment gateway → Emit LoanDisbursed
