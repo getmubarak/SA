@@ -32,13 +32,16 @@ A global digital Aggregator Platform wants allow customers to apply for personal
 
 
 ## Challenges
-- Frequent timeouts from third-party APIs (e.g., Credit Score API).
-- The KYC Verification Service from a third-party provider sometimes goes down for several minutes.
-- Prevent abuse or exceeding third-party quotas.
-- Repeated KYC lookups for the same customer (customer submits many application or make modifications)
-- Interacting with external unreliable systems (banks, bureaus, KYC vendors). Many of these interactions may fail or time out. 
-- Uploading and processing user documents
-- Multi-step processes would sometimes fail midway, leaving the system in an inconsistent state.
-- Sudden spikes in traffic (e.g., during flash sales) caused the services to fail due to overwhelming requests.
-- Isolation of components prevents failure in one part from affecting the entire system. 
-- 
+* The KYC Verification Service from a third-party provider sometimes goes down for several minutes.  
+* Prevent abuse or exceeding third-party quotas. 
+* Repeated KYC lookups for the same customer (customer submits many application or make modifications) 	
+* Interacting with external unreliable systems (banks, , Credit Score API, KYC vendors). Many of these interactions may fail or time out. 
+* Uploading and processing user documents 
+* Multi-step processes would sometimes fail midway, leaving the system in an inconsistent state. 	
+* Must gracefully handle peak loads, especially during marketing campaigns or loan seasons. 
+* Isolation of components prevents failure in one part from affecting the entire system. 
+* If downstream systems fail (e.g., KYC succeeds but bank rejects the loan), who to maintain data consistency.
+* Ensure multiple applications from the same user don’t trigger duplicate disbursements.
+* Banks in different countries may have different regulatory requirements.
+* Sensitive PII (e.g., KYC data) must be stored/processed in specific geographies.
+* Banks can be added or removed at runtime 
