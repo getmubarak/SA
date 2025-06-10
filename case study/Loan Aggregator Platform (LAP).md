@@ -2,7 +2,7 @@ A global digital Aggregator Platform wants allow customers to apply for personal
 
 steps
 - Loan Application Submitted
-# Emit event: LoanApplied
+  Emit event: LoanApplied
 - Credit Score Check (Service A) → Listens to LoanApplied → Calls external Credit Bureau → Emit CreditChecked
 Risk Assessment (Service B) → Listens to CreditChecked → Computes risk profile → Emit RiskAssessed
 KYC Verification (Service C) → Listens to RiskAssessed → Triggers third-party KYC → Emit KycVerified
