@@ -61,10 +61,9 @@
 * We need to store both driver and customer IDs. We need three bytes for DriverID and eight bytes for CustomerID, so we will need 21MB of memory.
 (500,000 * 3) + (500,000 * 5 * 8 ) ~= 21 MB
 * Now for bandwidth. For every active driver, we have five subscribers. In total, this reaches:
-5 * 500,000 => 2.5million5∗500,000=>2.5million
+5 * 500,000 => 2.5million
 * We need to send DriverID (3 bytes) and their location (16 bytes) every second, which requires:
-2.5million * 19 bytes => 47.5 MB/s2.5million∗19bytes=>47.5MB/s
-
+2.5million * 19 bytes => 47.5 MB/s
 
 ### Reference
 - https://highscalability.com/brief-history-of-scaling-uber/
