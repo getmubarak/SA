@@ -1,6 +1,5 @@
 A global digital Aggregator Platform wants allow customers to apply for personal loans online or via mobile. The system integrates with external services like banks, credit bureaus, fraud detection systems, and document verification platforms.
 
-steps
 #### Loan Application Submitted
 * Customer submits loan application via aggregator’s web/mobile app.
 * System emits event: LoanApplied.
@@ -23,6 +22,11 @@ steps
 #### Customer Selects Loan Offer
 * Customer picks preferred loan offer from the list.
 * Emits event: LoanSelected[BankID].
+
+
+## Challenges
+- Frequent timeouts from third-party APIs (e.g., Credit Score API).
+- 
 #### Loan Disbursement
 * Reserves funds with chosen bank.
 * Calls payment gateway or bank API for fund disbursement.
