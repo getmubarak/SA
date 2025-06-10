@@ -6,21 +6,20 @@
 * Confirm Booking: The user selects their preferred ride option and taps "Confirm."
 
 2. Ride Request Processing (Backend - Core Services):
-
-API Gateway/Load Balancer: The request hits Uber's backend through an API Gateway, which routes it to the appropriate services.
-Request Validation: The request is validated (e.g., valid user, payment method, destination).
-Geospatial Matching Service: This is a critical component. It performs the following:
-Driver Discovery: Identifies available drivers in the vicinity of the passenger's pickup location. This is often done using spatial indexing techniques (e.g., S2 library, geohashing) to quickly query for drivers within a certain radius.
-Driver Filtering: Filters drivers based on:
-Availability (online, not on a trip)
-Vehicle type
-Rating
-Proximity
-Acceptance rate
-Destination (if destination filtering is enabled for drivers)
-Dynamic Pricing/Surge Calculation (if not already done): If surge pricing is in effect, it's applied here based on real-time supply and demand in the area.
-Matchmaking Algorithm: This is the core logic. Uber uses sophisticated algorithms to match the passenger with the "best" available driver. Factors considered include:
-Proximity: Closest available driver.
+* API Gateway/Load Balancer: The request hits Uber's backend through an API Gateway, which routes it to the appropriate services.
+* Request Validation: The request is validated (e.g., valid user, payment method, destination).
+* Geospatial Matching Service: This is a critical component. It performs the following:
+    * Driver Discovery: Identifies available drivers in the vicinity of the passenger's pickup location. This is often done using spatial indexing techniques (e.g., S2 library, geohashing) to quickly query for drivers within a certain radius.
+    * Driver Filtering: Filters drivers based on:
+    * Availability (online, not on a trip)
+        * Vehicle type
+        * Rating
+        * Proximity
+        * Acceptance rate
+        * Destination (if destination filtering is enabled for drivers)
+* Dynamic Pricing/Surge Calculation (if not already done): If surge pricing is in effect, it's applied here based on real-time supply and demand in the area.
+* Matchmaking Algorithm: This is the core logic. Uber uses sophisticated algorithms to match the passenger with the "best" available driver. Factors considered include:
+* Proximity: Closest available driver.
 ETA: Driver who can reach the passenger fastest.
 Driver's Current Trajectory: If a driver is already moving in the direction of the passenger, they might be preferred.
 Fairness: Ensuring drivers get a reasonable share of requests.
