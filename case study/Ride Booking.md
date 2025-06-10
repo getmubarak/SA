@@ -1,8 +1,8 @@
 1. User Request (Client-Side - Passenger App):
 * Open App & Set Destination: The user opens the Uber app, which detects their current GPS location. They then input their desired destination.
 * Ride Options & Fare Estimation: The app displays available ride types (e.g., UberX, UberXL, Black, etc.) along with estimated fares and arrival times for each. This involves:
- * Fare Calculation Service: Takes into account distance, estimated time, surge pricing, traffic conditions, tolls, and ride type.
- * ETA Service: Calculates estimated time of arrival based on current traffic, driver availability, and route.
+    * Fare Calculation Service: Takes into account distance, estimated time, surge pricing, traffic conditions, tolls, and ride type.
+    * ETA Service: Calculates estimated time of arrival based on current traffic, driver availability, and route.
 * Confirm Booking: The user selects their preferred ride option and taps "Confirm."
 
 2. Ride Request Processing (Backend - Core Services):
