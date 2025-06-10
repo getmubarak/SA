@@ -19,20 +19,18 @@
         * Destination (if destination filtering is enabled for drivers)
 * Dynamic Pricing/Surge Calculation (if not already done): If surge pricing is in effect, it's applied here based on real-time supply and demand in the area.
 * Matchmaking Algorithm: This is the core logic. Uber uses sophisticated algorithms to match the passenger with the "best" available driver. Factors considered include:
-* Proximity: Closest available driver.
-ETA: Driver who can reach the passenger fastest.
-Driver's Current Trajectory: If a driver is already moving in the direction of the passenger, they might be preferred.
-Fairness: Ensuring drivers get a reasonable share of requests.
-Pre-existing Queues/Zones: Drivers might be queued in certain zones.
-Driver Notification Service: Once a potential match is found, a notification is sent to the selected driver's app.
+    * Proximity: Closest available driver.
+    * ETA: Driver who can reach the passenger fastest.
+    * Driver's Current Trajectory: If a driver is already moving in the direction of the passenger, they might be preferred.
+    * Fairness: Ensuring drivers get a reasonable share of requests.
+    * Pre-existing Queues/Zones: Drivers might be queued in certain zones.
+* Driver Notification Service: Once a potential match is found, a notification is sent to the selected driver's app.
+  
 3. Driver Acceptance (Client-Side - Driver App):
-
-Notification Received: The driver's app receives a ride request notification, displaying the passenger's pickup location, destination, estimated earnings, and pickup time.
-Accept/Decline: The driver has a limited time to accept or decline the ride.
-Accept: If the driver accepts, the ride is confirmed.
-Decline/Timeout: If the driver declines or the request times out, the matchmaking service will attempt to find another suitable driver.
-
-
+* Notification Received: The driver's app receives a ride request notification, displaying the passenger's pickup location, destination, estimated earnings, and pickup time.
+* Accept/Decline: The driver has a limited time to accept or decline the ride.
+    * Accept: If the driver accepts, the ride is confirmed.
+    * Decline/Timeout: If the driver declines or the request times out, the matchmaking service will attempt to find another suitable driver.
 
 ### 3. Quality Requirements
 - 300 million customers and one million drivers in the system
