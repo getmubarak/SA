@@ -1,3 +1,4 @@
+### Functional Requirements
 1. User Request (Client-Side - Passenger App):
 * Open App & Set Destination: The user opens the Uber app, which detects their current GPS location. They then input their desired destination.
 * Ride Options & Fare Estimation: The app displays available ride types (e.g., UberX, UberXL, Black, etc.) along with estimated fares and arrival times for each. This involves:
@@ -40,28 +41,28 @@
     * Accept: If the driver accepts, the ride is confirmed.
     * Decline/Timeout: If the driver declines or the request times out, the matchmaking service will attempt to find another suitable driver.
 
-### 3. Quality Requirements
-- 300 million customers and one million drivers in the system
-- One million active customers and 500 thousand active drivers per day
-- One million rides per day
-- All active drivers notify their current location every three seconds
-- System contacts drivers in real time when customer puts in a ride request
-- driver’s current and previous location :  35 bytes.
-DriverID (3 bytes for 1 million drivers)
-Old latitude (8 bytes)
-Old longitude (8 bytes)
-New latitude (8 bytes)
-New longitude (8 bytes)
-- Since we assume one million drivers, we’ll require the following memory:
+### Quality Requirements
+* 300 million customers and one million drivers in the system
+* One million active customers and 500 thousand active drivers per day
+* One million rides per day
+* All active drivers notify their current location every three seconds
+* System contacts drivers in real time when customer puts in a ride request
+
+### Capacity planning
+* driver’s current and previous location :  35 bytes.
+    * DriverID (3 bytes for 1 million drivers)
+    * Old latitude (8 bytes)
+    * Old longitude (8 bytes)
+    * New latitude (8 bytes)
+    * New longitude (8 bytes)
+* Since we assume one million drivers, we’ll require the following memory:
  1 million ∗ 35 bytes => 35MB
-- we get the DriverID and location, it will require (3+16 => 19 bytes). This information is received every three seconds from 500 thousand daily active drivers, so we receive 9.5MB every three seconds.
-- We need to store both driver and customer IDs. We need three bytes for DriverID and eight bytes for CustomerID, so we will need 21MB of memory.
+* we get the DriverID and location, it will require (3+16 => 19 bytes). This information is received every three seconds from 500 thousand daily active drivers, so we receive 9.5MB every three seconds.
+* We need to store both driver and customer IDs. We need three bytes for DriverID and eight bytes for CustomerID, so we will need 21MB of memory.
 (500,000 * 3) + (500,000 * 5 * 8 ) ~= 21 MB
-
-- Now for bandwidth. For every active driver, we have five subscribers. In total, this reaches:
+* Now for bandwidth. For every active driver, we have five subscribers. In total, this reaches:
 5 * 500,000 => 2.5million5∗500,000=>2.5million
-
-- We need to send DriverID (3 bytes) and their location (16 bytes) every second, which requires:
+* We need to send DriverID (3 bytes) and their location (16 bytes) every second, which requires:
 2.5million * 19 bytes => 47.5 MB/s2.5million∗19bytes=>47.5MB/s
 
 
@@ -78,15 +79,4 @@ New longitude (8 bytes)
 - https://www.codekarle.com/system-design/Uber-system-design.html
 
 
-#### Services
 
-- Payment Service
-- Cab Finder
-- Trip Service
-- Rider Service
-- Location Service (Segment)
-- Map Service  
-- Fraud Detection Service
-- Route Service
-- Fare Service
-- Notification Service
