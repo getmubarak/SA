@@ -1,8 +1,17 @@
 1. User Request (Client-Side - Passenger App):
 * Open App & Set Destination: The user opens the Uber app, which detects their current GPS location. They then input their desired destination.
 * Ride Options & Fare Estimation: The app displays available ride types (e.g., UberX, UberXL, Black, etc.) along with estimated fares and arrival times for each. This involves:
-    * Fare Calculation Service: Takes into account distance, estimated time, surge pricing, traffic conditions, tolls, and ride type.
-    * ETA Service: Calculates estimated time of arrival based on current traffic, driver availability, and route.
+    * Fare Calculation Service: Takes into account 
+        *distance
+        * estimated time
+        * surge pricing (dynamic pricing due to high demand)
+        * traffic conditions
+        * tolls
+        * ride type.
+    * ETA Service: Calculates estimated time of arrival based on
+        * current traffic
+        * driver availability
+        * route.
 * Confirm Booking: The user selects their preferred ride option and taps "Confirm."
 
 2. Ride Request Processing (Backend - Core Services):
@@ -17,7 +26,6 @@
         * Proximity
         * Acceptance rate
         * Destination (if destination filtering is enabled for drivers)
-* Dynamic Pricing/Surge Calculation (if not already done): If surge pricing is in effect, it's applied here based on real-time supply and demand in the area.
 * Matchmaking Algorithm: This is the core logic. Uber uses sophisticated algorithms to match the passenger with the "best" available driver. Factors considered include:
     * Proximity: Closest available driver.
     * ETA: Driver who can reach the passenger fastest.
