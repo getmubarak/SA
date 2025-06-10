@@ -48,6 +48,15 @@
 * All active drivers notify their current location every three seconds
 * System contacts drivers in real time when customer puts in a ride request
 
+### Challenges
+* How can we manage system overload from frequent driver location updates while ensuring location accuracy?
+* How do we handle frequent driver location updates and efficient proximity searches on location data?
+* How do we prevent multiple ride requests from being sent to the same driver simultaneously?
+* Isolation of failure in one part from affecting the entire system.
+    * Use: surge pricing failure shouldn’t break matching.
+* How can we ensure no ride requests are dropped during peak demand periods?
+* How can you further scale the system to reduce latency and improve throughput?
+
 ### Capacity planning
 * driver’s current and previous location :  35 bytes.
     * DriverID (3 bytes for 1 million drivers)
@@ -76,6 +85,6 @@
 - https://tianpan.co/notes/120-designing-uber
 - https://github.com/puncsky/system-design-and-architecture/blob/master/en/120-designing-uber.md
 - https://www.codekarle.com/system-design/Uber-system-design.html
-
+- https://thinhdanggroup.github.io/10-redis-locks/
 
 
