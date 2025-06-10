@@ -1,10 +1,10 @@
 A global digital Aggregator Platform wants allow customers to apply for personal loans online or via mobile. The system integrates with external services like banks, credit bureaus, fraud detection systems, and document verification platforms.
 
 steps
-## Loan Application Submitted
+### Loan Application Submitted
 * Customer submits loan application via aggregator’s web/mobile app.
 * System emits event: LoanApplied.
-## Credit Score Check (centralized)
+### Credit Score Check (centralized)
 * It calls the Credit Bureau .
 * Emits event: CreditChecked.
 - Risk Assessment per Bank (Parallelized per Bank)
