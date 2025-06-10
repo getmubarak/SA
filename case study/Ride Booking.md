@@ -11,7 +11,7 @@
 * Geospatial Matching Service: This is a critical component. It performs the following:
     * Driver Discovery: Identifies available drivers in the vicinity of the passenger's pickup location. This is often done using spatial indexing techniques (e.g., S2 library, geohashing) to quickly query for drivers within a certain radius.
     * Driver Filtering: Filters drivers based on:
-    * Availability (online, not on a trip)
+        * Availability (online, not on a trip)
         * Vehicle type
         * Rating
         * Proximity
