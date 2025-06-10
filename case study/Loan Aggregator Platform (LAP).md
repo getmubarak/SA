@@ -37,4 +37,4 @@ A global digital Aggregator Platform wants allow customers to apply for personal
 - Prevent abuse or exceeding third-party quotas.
 - Repeated KYC lookups for the same customer (customer submits many application or make modifications)
 - Interacting with external unreliable systems (banks, bureaus, KYC vendors). Many of these interactions may fail or time out. 
-- 
+- Uploading and processing user documents
