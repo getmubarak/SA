@@ -84,8 +84,6 @@ You're the principal architect for "RideNow," a ride-hailing platform operating 
 
 ---
 
-## Technical Bottleneck (30-minute analysis challenge)
-
 ### The Problem
 
 The platform is experiencing severe issues that are impacting business operations and user satisfaction:
