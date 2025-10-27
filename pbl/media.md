@@ -69,8 +69,6 @@ User opens home page
 
 ---
 
-## Technical Bottleneck (30-minute analysis challenge)
-
 ### The Problem
 
 The platform is experiencing critical issues affecting user experience and operational costs:
