@@ -102,9 +102,6 @@ You're the lead architect for "CloudSync," a cloud file storage and synchronizat
 ```
 
 ---
-
-## Technical Bottleneck (30-minute analysis challenge)
-
 ### The Problem
 
 The platform is experiencing severe issues affecting user experience and operational costs:
