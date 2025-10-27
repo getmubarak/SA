@@ -132,10 +132,6 @@ The system faces extreme challenges:
 9. During this time, new bookings blocked
 ```
 
----
-
-## Technical Bottleneck (30-minute analysis challenge)
-
 ### The Problem
 
 The platform is experiencing catastrophic failures affecting millions of passengers:
