@@ -39,10 +39,6 @@ User clicks "Buy Now"
 → Returns success/failure to user
 ```
 
----
-
-## Technical Bottleneck (30-minute analysis challenge)
-
 ### The Problem
 
 During the last flash sale simulation with only 10,000 concurrent users, the following issues occurred:
